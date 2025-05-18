@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+:root {
+    --main-color: #705AEB;
+    --link-color: #ffffff;
+    --head-color: #e3e3e3;
+    --black-color: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+/* start header */
+header {
+    background: linear-gradient(90deg, rgba(112, 90, 235, 0.45) -0.53%, rgba(89, 72, 187, 0.66) -0.52%, rgba(87, 70, 182, 0.69) 4.99%, rgba(81, 65, 169, 0.74) 21.05%, rgba(18, 8, 72, 0.81) 37.11%, rgba(63, 51, 133, 0.90) 54.17%, rgba(66, 53, 139, 0.87) 60.7%, rgba(74, 59, 154, 0.81) 78.77%, rgba(67, 54, 140, 0.87) 90.3%, rgba(68, 55, 143, 0.86) 90.31%);
+    height: 121px;
+    margin-bottom: 1rem;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.container .icon {
+    width: 287px;
+    height: 201px;
+}
+
+.container .icon img {
+    width: 100%
+}
+
+.container .links {
+    position: relative;
+    bottom: 2rem;
+}
+
+.container .links a {
+    color: var(--link-color);
+    font-size: 2rem;
+    margin-left: 3rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s;
+    color: var(--link-color);
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70.187%;
+}
+
+.container .links a:hover {
+    color: var(--main-color);
+}
+
+.container .links a.lighted {
+    color: var(--main-color);
+}
+
+
+.container .log-but {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    bottom: 2rem;
+}
+
+.container .log-but a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 11px 26.25px 11px 27.75px;
+    background-color: var(--main-color);
+    color: var(--link-color);
+    width: 117px;
+    height: 42px;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: .3s;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+
+
+.container .log-but a:hover {
+    background-color: #fff;
+    color: #705AEB;
+}
+
+/* end header */
+/* start main  */
+main {
+    margin: 2rem;
+    display: flex;
+}
+
+main .left-side {
+    flex-basis: 50%;
+}
+
+main .left-side .cards {
+    width: 600px;
+    height: 700px;
+    padding: 4rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 20px;
+}
+
+main .left-side .cards .title {
+    text-align: center;
+    height: 220px;
+}
+
+main .left-side .cards .title h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--main-color);
+    font-family: Roboto;
+
+}
+
+main .left-side .cards .profile-card {
+    width: 500px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    align-items: center;
+    position: relative;
+
+}
+
+main .left-side .cards .profile-card::after {
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(180deg, rgba(137, 136, 136, 0.50) 0%, rgba(221, 220, 220, 0.50) 0%);
+}
+
+main .left-side .cards .profile-card .icon {
+    display: flex;
+    align-items: center;
+
+}
+
+main .left-side .cards .profile-card button { 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    background: #fff;
+    transition: .3s;
+}
+main .left-side .cards .profile-card button:hover { 
+    background-color: #705AEB;
+}
+
+
+main .left-side .cards .profile-card i {
+    color: #705AEB;
+    font-size: 20px;
+    cursor: pointer;
+}
+main .left-side .cards .profile-card button:hover i { 
+    color: #fff;
+}
+
+main .left-side .cards .profile-card .icon img {
+    height: 30px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+main .left-side .cards .profile-card .icon h2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+main .right-side {
+    flex-basis: 50%;
+}
+
+main .right-side .content {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+main .right-side .content .profile-img img {
+    width: 355px;
+    height: 372px;
+    margin-bottom: 4rem;
+}
+
+main .right-side .content .profile-img h1 {
+    color: #705AEB;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: poppins;
+}
+
+/* end main  */
+
+
+ 
+.log-out-pop {
+    width: 700px;
+    height: 257px;
+    flex-shrink: 0;
+    background: #FFF;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+}
+
+.log-out-pop h3 {
+    color: #000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 3rem;
+    margin-top: 10px;
+    position: relative;
+    text-transform: capitalize;
+
+}
+
+.log-out-pop h3::after {
+    content: "";
+    position: absolute;
+    width: 550px;
+    height: 1px;
+    background: linear-gradient(180deg, rgba(137, 136, 136, 0.50) 0%, rgba(221, 220, 220, 0.50) 0%);
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.log-out-pop p {
+    color: #898888;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+.log-out-pop .buttons { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    margin: 0 auto;
+
+}
+
+.log-out-pop button {
+    width: 131px;
+    height: 54px;
+    border-radius: 24.676px;
+    border: 2.961px solid #705AEB;
+    color: #705AEB;
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    color: #705AEB;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+
+}
+
+.log-out-pop button:hover {
+    background-color: #705AEB;
+    color: #fff;
+}

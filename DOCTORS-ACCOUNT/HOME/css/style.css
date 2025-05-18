@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+:root {
+    --main-color: #705AEB;
+    --link-color: #ffffff;
+    --head-color: #e3e3e3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+    background-image: url('../img/premium_photo-1676325101995-cdfc26d820bb.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* start header */
+
+header {
+    margin-top: -20px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+header .container::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 200px);
+    height: 1px;
+    background-color: #ffffff;
+    opacity: .7;
+    bottom: 50px;
+    left: 51%;
+    transform: translateX(-50%);
+}
+
+.container .icon {
+    width: 287px;
+    height: 201px;
+    position: relative;
+    top: 2rem;
+}
+
+.container .icon img {
+    width: 100%
+}
+
+
+.container .links a {
+    color: var(--link-color);
+    font-size: 2rem;
+    margin-left: 3rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s;
+    color: var(--link-color);
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70.187%;
+}
+
+.container .links a:hover {
+    color: var(--main-color);
+}
+
+.container .links .lighted {
+    color: var(--main-color);
+}
+
+.container .log-but {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .log-but a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 11px 26.25px 11px 27.75px;
+    background-color: var(--main-color);
+    color: var(--link-color);
+    width: 117px;
+    height: 42px;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: .3s;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.container .log-but a:hover {
+    background-color: #fff;
+    color: #705AEB;
+}
+
+/* end header */
+
+/* start main  */
+main {
+    position: absolute;
+    left: 7rem
+}
+
+main .container {
+    width: 579px;
+    height: 450px;
+    padding: 2rem;
+    background: linear-gradient(220deg, rgba(12.05, 5.84, 46.75, 0.50) 0%, rgba(63.39, 50.94, 133, 0.50) 100%);
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    position: relative;
+}
+
+main .container img {
+    position: absolute;
+    left: -30px;
+    top: -30px
+}
+
+main .container h1 {
+    color: #E3E3E3;
+    font-family: "Secular One";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main .container p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+
+}
+
+
+/* end main  */
