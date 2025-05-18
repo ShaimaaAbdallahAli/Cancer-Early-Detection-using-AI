@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css reset  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inder&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inder&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inder&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inder&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Secular+One&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+    <!-- start header -->
+    <header>
+        <div class="container">
+            <div class="icon">
+                <img src="img/photo_2024-03-02_13-40-49-removebg-preview (1) 1.png" alt="">
+            </div>
+            <div class="links">
+                <a href="../HOME/index.html">Home</a>
+                <a href="../SERVICES/SERVICES-GET-STARTED/index.html">services</a>
+                <a href="../DASHBOARD-PAITENTS/Dashboard-patiant.html">profile</a>
+                <a href="index.html" class="lighted">search</a>
+            </div>
+            <div class="log-but">
+                <a href="#">Log in</a>
+                <a href='#'>sign up</a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start main  -->
+    <main>
+        <div class="container">
+            <div class="left-side">
+                <div class="profile-icon">
+                    <img src="img/Mask Group.png" alt="">
+                    <div class="profile-info">
+                        <p>alex</p>
+                        <img src="img/Group 293.png" alt="">
+                    </div>
+                    <button onclick="gotopage()">chat</button>
+                </div>
+                <div class="tabs">
+                    <button class="lighted">all doctors</button>
+                    <button onclick="mydoc()">my doctors</button>
+                </div>
+                <div class="profile-doctor" onclick="docprofile()">
+                    <img src="img/alex.png" alt="">
+                    <div class="content">
+                        <h2>Dr. Alexander Poppins</h2>
+                        <p class="job">Physician</p>
+                        <p class="special lighted">Thyroid cancer doctor</p>
+                        <img src="img/stars.png" alt="">
+                    </div>
+                    <div class="contact">
+                        <button class="message">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60"
+                                fill="none">
+                                <g filter="url(#filter0_dd_118_21)">
+                                    <path
+                                        d="M8.32129 29.889C8.32129 18.1397 18.7866 8.61502 31.6963 8.61502C44.6059 8.61502 55.0713 18.1397 55.0713 29.889C55.0713 41.6383 44.6059 51.163 31.6963 51.163C18.7866 51.163 8.32129 41.6383 8.32129 29.889Z"
+                                        fill="white" />
+                                </g>
+                                <path
+                                    d="M8.60571 29.889C8.60571 18.8412 18.4463 9.8851 30.5852 9.8851H32.8061C44.945 9.8851 54.7856 18.8412 54.7856 29.889C54.7856 40.9369 44.945 49.8929 32.8061 49.8929H30.5852C18.4463 49.8929 8.60571 40.9369 8.60571 29.889Z"
+                                    fill="#F5F7FB" />
+                                <path
+                                    d="M37.0347 22.7977C37.5322 22.7977 38.0093 22.9776 38.3611 23.2977C38.7128 23.6179 38.9105 24.0521 38.9105 24.5049V35.4248C38.9104 35.5093 38.8829 35.5918 38.8313 35.662C38.7797 35.7322 38.7064 35.7869 38.6207 35.8191C38.5349 35.8514 38.4406 35.8598 38.3496 35.8432C38.2586 35.8267 38.175 35.7859 38.1095 35.7261L35.4337 33.2908C35.2579 33.1308 35.0194 33.0408 34.7706 33.0407H25.7801C25.2826 33.0407 24.8055 32.8609 24.4537 32.5407C24.1019 32.2206 23.9043 31.7863 23.9043 31.3336V24.5049C23.9043 24.0521 24.1019 23.6179 24.4537 23.2977C24.8055 22.9776 25.2826 22.7977 25.7801 22.7977H37.0347Z"
+                                    fill="#705AEB" />
+                                <defs>
+                                    <filter id="filter0_dd_118_21" x="0.321289" y="0.615021" width="62.75"
+                                        height="58.548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="4" dy="4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.815686 0 0 0 0 0.823529 0 0 0 0 0.835294 0 0 0 0.75 0" />
+                                        <feBlend mode="multiply" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_118_21" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="-4" dy="-4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                                        <feBlend mode="multiply" in2="effect1_dropShadow_118_21"
+                                            result="effect2_dropShadow_118_21" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_118_21"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="call">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60"
+                                fill="none">
+                                <g filter="url(#filter0_dd_118_42)">
+                                    <path
+                                        d="M8.74976 29.889C8.74976 18.1397 19.2151 8.61502 32.1247 8.61502C45.0344 8.61502 55.4997 18.1397 55.4997 29.889C55.4997 41.6383 45.0344 51.163 32.1247 51.163C19.2151 51.163 8.74976 41.6383 8.74976 29.889Z"
+                                        fill="white" />
+                                </g>
+                                <path
+                                    d="M9.03467 29.889C9.03467 18.8412 18.8752 9.8851 31.0141 9.8851H33.2351C45.374 9.8851 55.2145 18.8412 55.2145 29.889C55.2145 40.9369 45.374 49.8929 33.2351 49.8929H31.0141C18.8752 49.8929 9.03467 40.9369 9.03467 29.889Z"
+                                    fill="#F5F7FB" />
+                                <path
+                                    d="M26.8146 20.9991L28.5313 20.528C29.0979 20.3728 29.7071 20.4105 30.2454 20.634C30.7838 20.8575 31.2143 21.2516 31.4569 21.7428L32.6604 24.1788C32.8693 24.6014 32.9275 25.0729 32.8269 25.5271C32.7263 25.9814 32.4719 26.3956 32.0994 26.7115L30.2675 28.265C30.022 28.4772 30.2081 29.3039 31.105 30.7187C32.0028 32.1343 32.6968 32.6941 33.0167 32.607L35.4167 31.9391C35.9032 31.8037 36.4241 31.8102 36.9063 31.9578C37.3885 32.1053 37.8079 32.3865 38.1057 32.7619L39.8162 34.9195C40.1616 35.3552 40.3216 35.8903 40.2664 36.4252C40.2111 36.9602 39.9444 37.4587 39.5157 37.8282L38.1934 38.9679C37.7665 39.3358 37.2401 39.5941 36.6677 39.7164C36.0954 39.8387 35.4976 39.8206 34.9355 39.664C32.165 38.8921 29.5993 36.6013 27.2037 32.824C24.8028 29.041 23.8961 25.85 24.528 23.2431C24.6555 22.7178 24.9346 22.2329 25.3365 21.8385C25.7384 21.444 26.2487 21.1543 26.8146 20.9991Z"
+                                    fill="#705AEB" />
+                                <defs>
+                                    <filter id="filter0_dd_118_42" x="0.749756" y="0.615021" width="62.75"
+                                        height="58.548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="4" dy="4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.815686 0 0 0 0 0.823529 0 0 0 0 0.835294 0 0 0 0.75 0" />
+                                        <feBlend mode="multiply" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_118_42" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="-4" dy="-4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                                        <feBlend mode="multiply" in2="effect1_dropShadow_118_42"
+                                            result="effect2_dropShadow_118_42" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_118_42"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="profile-doctor">
+                    <img src="img/thierry.png" alt="">
+                    <div class="content">
+                        <h2>Dr. Thierry Henry</h2>
+                        <p class="job">Physician</p>
+                        <p class="special lighted">Thyroid cancer doctor</p>
+                        <img src="img/stars.png" alt="">
+                    </div>
+                    <div class="contact">
+                        <button class="message">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60"
+                                fill="none">
+                                <g filter="url(#filter0_dd_118_21)">
+                                    <path
+                                        d="M8.32129 29.889C8.32129 18.1397 18.7866 8.61502 31.6963 8.61502C44.6059 8.61502 55.0713 18.1397 55.0713 29.889C55.0713 41.6383 44.6059 51.163 31.6963 51.163C18.7866 51.163 8.32129 41.6383 8.32129 29.889Z"
+                                        fill="white" />
+                                </g>
+                                <path
+                                    d="M8.60571 29.889C8.60571 18.8412 18.4463 9.8851 30.5852 9.8851H32.8061C44.945 9.8851 54.7856 18.8412 54.7856 29.889C54.7856 40.9369 44.945 49.8929 32.8061 49.8929H30.5852C18.4463 49.8929 8.60571 40.9369 8.60571 29.889Z"
+                                    fill="#F5F7FB" />
+                                <path
+                                    d="M37.0347 22.7977C37.5322 22.7977 38.0093 22.9776 38.3611 23.2977C38.7128 23.6179 38.9105 24.0521 38.9105 24.5049V35.4248C38.9104 35.5093 38.8829 35.5918 38.8313 35.662C38.7797 35.7322 38.7064 35.7869 38.6207 35.8191C38.5349 35.8514 38.4406 35.8598 38.3496 35.8432C38.2586 35.8267 38.175 35.7859 38.1095 35.7261L35.4337 33.2908C35.2579 33.1308 35.0194 33.0408 34.7706 33.0407H25.7801C25.2826 33.0407 24.8055 32.8609 24.4537 32.5407C24.1019 32.2206 23.9043 31.7863 23.9043 31.3336V24.5049C23.9043 24.0521 24.1019 23.6179 24.4537 23.2977C24.8055 22.9776 25.2826 22.7977 25.7801 22.7977H37.0347Z"
+                                    fill="#705AEB" />
+                                <defs>
+                                    <filter id="filter0_dd_118_21" x="0.321289" y="0.615021" width="62.75"
+                                        height="58.548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="4" dy="4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.815686 0 0 0 0 0.823529 0 0 0 0 0.835294 0 0 0 0.75 0" />
+                                        <feBlend mode="multiply" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_118_21" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="-4" dy="-4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                                        <feBlend mode="multiply" in2="effect1_dropShadow_118_21"
+                                            result="effect2_dropShadow_118_21" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_118_21"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="call">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60"
+                                fill="none">
+                                <g filter="url(#filter0_dd_118_42)">
+                                    <path
+                                        d="M8.74976 29.889C8.74976 18.1397 19.2151 8.61502 32.1247 8.61502C45.0344 8.61502 55.4997 18.1397 55.4997 29.889C55.4997 41.6383 45.0344 51.163 32.1247 51.163C19.2151 51.163 8.74976 41.6383 8.74976 29.889Z"
+                                        fill="white" />
+                                </g>
+                                <path
+                                    d="M9.03467 29.889C9.03467 18.8412 18.8752 9.8851 31.0141 9.8851H33.2351C45.374 9.8851 55.2145 18.8412 55.2145 29.889C55.2145 40.9369 45.374 49.8929 33.2351 49.8929H31.0141C18.8752 49.8929 9.03467 40.9369 9.03467 29.889Z"
+                                    fill="#F5F7FB" />
+                                <path
+                                    d="M26.8146 20.9991L28.5313 20.528C29.0979 20.3728 29.7071 20.4105 30.2454 20.634C30.7838 20.8575 31.2143 21.2516 31.4569 21.7428L32.6604 24.1788C32.8693 24.6014 32.9275 25.0729 32.8269 25.5271C32.7263 25.9814 32.4719 26.3956 32.0994 26.7115L30.2675 28.265C30.022 28.4772 30.2081 29.3039 31.105 30.7187C32.0028 32.1343 32.6968 32.6941 33.0167 32.607L35.4167 31.9391C35.9032 31.8037 36.4241 31.8102 36.9063 31.9578C37.3885 32.1053 37.8079 32.3865 38.1057 32.7619L39.8162 34.9195C40.1616 35.3552 40.3216 35.8903 40.2664 36.4252C40.2111 36.9602 39.9444 37.4587 39.5157 37.8282L38.1934 38.9679C37.7665 39.3358 37.2401 39.5941 36.6677 39.7164C36.0954 39.8387 35.4976 39.8206 34.9355 39.664C32.165 38.8921 29.5993 36.6013 27.2037 32.824C24.8028 29.041 23.8961 25.85 24.528 23.2431C24.6555 22.7178 24.9346 22.2329 25.3365 21.8385C25.7384 21.444 26.2487 21.1543 26.8146 20.9991Z"
+                                    fill="#705AEB" />
+                                <defs>
+                                    <filter id="filter0_dd_118_42" x="0.749756" y="0.615021" width="62.75"
+                                        height="58.548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="4" dy="4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.815686 0 0 0 0 0.823529 0 0 0 0 0.835294 0 0 0 0.75 0" />
+                                        <feBlend mode="multiply" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_118_42" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="-4" dy="-4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                                        <feBlend mode="multiply" in2="effect1_dropShadow_118_42"
+                                            result="effect2_dropShadow_118_42" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_118_42"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="profile-doctor">
+                    <img src="img/tristan.png" alt="">
+                    <div class="content">
+                        <h2>Dr. Tristan Wilds</h2>
+                        <p class="job">Physician</p>
+                        <p class="special lighted">Thyroid cancer doctor</p>
+                        <img src="img/stars.png" alt="">
+                    </div>
+                    <div class="contact">
+                        <button class="message">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60"
+                                fill="none">
+                                <g filter="url(#filter0_dd_118_21)">
+                                    <path
+                                        d="M8.32129 29.889C8.32129 18.1397 18.7866 8.61502 31.6963 8.61502C44.6059 8.61502 55.0713 18.1397 55.0713 29.889C55.0713 41.6383 44.6059 51.163 31.6963 51.163C18.7866 51.163 8.32129 41.6383 8.32129 29.889Z"
+                                        fill="white" />
+                                </g>
+                                <path
+                                    d="M8.60571 29.889C8.60571 18.8412 18.4463 9.8851 30.5852 9.8851H32.8061C44.945 9.8851 54.7856 18.8412 54.7856 29.889C54.7856 40.9369 44.945 49.8929 32.8061 49.8929H30.5852C18.4463 49.8929 8.60571 40.9369 8.60571 29.889Z"
+                                    fill="#F5F7FB" />
+                                <path
+                                    d="M37.0347 22.7977C37.5322 22.7977 38.0093 22.9776 38.3611 23.2977C38.7128 23.6179 38.9105 24.0521 38.9105 24.5049V35.4248C38.9104 35.5093 38.8829 35.5918 38.8313 35.662C38.7797 35.7322 38.7064 35.7869 38.6207 35.8191C38.5349 35.8514 38.4406 35.8598 38.3496 35.8432C38.2586 35.8267 38.175 35.7859 38.1095 35.7261L35.4337 33.2908C35.2579 33.1308 35.0194 33.0408 34.7706 33.0407H25.7801C25.2826 33.0407 24.8055 32.8609 24.4537 32.5407C24.1019 32.2206 23.9043 31.7863 23.9043 31.3336V24.5049C23.9043 24.0521 24.1019 23.6179 24.4537 23.2977C24.8055 22.9776 25.2826 22.7977 25.7801 22.7977H37.0347Z"
+                                    fill="#705AEB" />
+                                <defs>
+                                    <filter id="filter0_dd_118_21" x="0.321289" y="0.615021" width="62.75"
+                                        height="58.548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="4" dy="4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.815686 0 0 0 0 0.823529 0 0 0 0 0.835294 0 0 0 0.75 0" />
+                                        <feBlend mode="multiply" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_118_21" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="-4" dy="-4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                                        <feBlend mode="multiply" in2="effect1_dropShadow_118_21"
+                                            result="effect2_dropShadow_118_21" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_118_21"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="call">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60"
+                                fill="none">
+                                <g filter="url(#filter0_dd_118_42)">
+                                    <path
+                                        d="M8.74976 29.889C8.74976 18.1397 19.2151 8.61502 32.1247 8.61502C45.0344 8.61502 55.4997 18.1397 55.4997 29.889C55.4997 41.6383 45.0344 51.163 32.1247 51.163C19.2151 51.163 8.74976 41.6383 8.74976 29.889Z"
+                                        fill="white" />
+                                </g>
+                                <path
+                                    d="M9.03467 29.889C9.03467 18.8412 18.8752 9.8851 31.0141 9.8851H33.2351C45.374 9.8851 55.2145 18.8412 55.2145 29.889C55.2145 40.9369 45.374 49.8929 33.2351 49.8929H31.0141C18.8752 49.8929 9.03467 40.9369 9.03467 29.889Z"
+                                    fill="#F5F7FB" />
+                                <path
+                                    d="M26.8146 20.9991L28.5313 20.528C29.0979 20.3728 29.7071 20.4105 30.2454 20.634C30.7838 20.8575 31.2143 21.2516 31.4569 21.7428L32.6604 24.1788C32.8693 24.6014 32.9275 25.0729 32.8269 25.5271C32.7263 25.9814 32.4719 26.3956 32.0994 26.7115L30.2675 28.265C30.022 28.4772 30.2081 29.3039 31.105 30.7187C32.0028 32.1343 32.6968 32.6941 33.0167 32.607L35.4167 31.9391C35.9032 31.8037 36.4241 31.8102 36.9063 31.9578C37.3885 32.1053 37.8079 32.3865 38.1057 32.7619L39.8162 34.9195C40.1616 35.3552 40.3216 35.8903 40.2664 36.4252C40.2111 36.9602 39.9444 37.4587 39.5157 37.8282L38.1934 38.9679C37.7665 39.3358 37.2401 39.5941 36.6677 39.7164C36.0954 39.8387 35.4976 39.8206 34.9355 39.664C32.165 38.8921 29.5993 36.6013 27.2037 32.824C24.8028 29.041 23.8961 25.85 24.528 23.2431C24.6555 22.7178 24.9346 22.2329 25.3365 21.8385C25.7384 21.444 26.2487 21.1543 26.8146 20.9991Z"
+                                    fill="#705AEB" />
+                                <defs>
+                                    <filter id="filter0_dd_118_42" x="0.749756" y="0.615021" width="62.75"
+                                        height="58.548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="4" dy="4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.815686 0 0 0 0 0.823529 0 0 0 0 0.835294 0 0 0 0.75 0" />
+                                        <feBlend mode="multiply" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_118_42" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="-4" dy="-4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                                        <feBlend mode="multiply" in2="effect1_dropShadow_118_42"
+                                            result="effect2_dropShadow_118_42" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_118_42"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="profile-doctor">
+                    <img src="img/samara.png" alt="">
+                    <div class="content">
+                        <h2>Dr. Samara Poppins</h2>
+                        <p class="job">Physician</p>
+                        <p class="special lighted">Thyroid cancer doctor</p>
+                        <img src="img/stars.png" alt="">
+                    </div>
+                    <div class="contact">
+                        <button class="message">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60"
+                                fill="none">
+                                <g filter="url(#filter0_dd_118_21)">
+                                    <path
+                                        d="M8.32129 29.889C8.32129 18.1397 18.7866 8.61502 31.6963 8.61502C44.6059 8.61502 55.0713 18.1397 55.0713 29.889C55.0713 41.6383 44.6059 51.163 31.6963 51.163C18.7866 51.163 8.32129 41.6383 8.32129 29.889Z"
+                                        fill="white" />
+                                </g>
+                                <path
+                                    d="M8.60571 29.889C8.60571 18.8412 18.4463 9.8851 30.5852 9.8851H32.8061C44.945 9.8851 54.7856 18.8412 54.7856 29.889C54.7856 40.9369 44.945 49.8929 32.8061 49.8929H30.5852C18.4463 49.8929 8.60571 40.9369 8.60571 29.889Z"
+                                    fill="#F5F7FB" />
+                                <path
+                                    d="M37.0347 22.7977C37.5322 22.7977 38.0093 22.9776 38.3611 23.2977C38.7128 23.6179 38.9105 24.0521 38.9105 24.5049V35.4248C38.9104 35.5093 38.8829 35.5918 38.8313 35.662C38.7797 35.7322 38.7064 35.7869 38.6207 35.8191C38.5349 35.8514 38.4406 35.8598 38.3496 35.8432C38.2586 35.8267 38.175 35.7859 38.1095 35.7261L35.4337 33.2908C35.2579 33.1308 35.0194 33.0408 34.7706 33.0407H25.7801C25.2826 33.0407 24.8055 32.8609 24.4537 32.5407C24.1019 32.2206 23.9043 31.7863 23.9043 31.3336V24.5049C23.9043 24.0521 24.1019 23.6179 24.4537 23.2977C24.8055 22.9776 25.2826 22.7977 25.7801 22.7977H37.0347Z"
+                                    fill="#705AEB" />
+                                <defs>
+                                    <filter id="filter0_dd_118_21" x="0.321289" y="0.615021" width="62.75"
+                                        height="58.548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="4" dy="4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.815686 0 0 0 0 0.823529 0 0 0 0 0.835294 0 0 0 0.75 0" />
+                                        <feBlend mode="multiply" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_118_21" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="-4" dy="-4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                                        <feBlend mode="multiply" in2="effect1_dropShadow_118_21"
+                                            result="effect2_dropShadow_118_21" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_118_21"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="call">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60"
+                                fill="none">
+                                <g filter="url(#filter0_dd_118_42)">
+                                    <path
+                                        d="M8.74976 29.889C8.74976 18.1397 19.2151 8.61502 32.1247 8.61502C45.0344 8.61502 55.4997 18.1397 55.4997 29.889C55.4997 41.6383 45.0344 51.163 32.1247 51.163C19.2151 51.163 8.74976 41.6383 8.74976 29.889Z"
+                                        fill="white" />
+                                </g>
+                                <path
+                                    d="M9.03467 29.889C9.03467 18.8412 18.8752 9.8851 31.0141 9.8851H33.2351C45.374 9.8851 55.2145 18.8412 55.2145 29.889C55.2145 40.9369 45.374 49.8929 33.2351 49.8929H31.0141C18.8752 49.8929 9.03467 40.9369 9.03467 29.889Z"
+                                    fill="#F5F7FB" />
+                                <path
+                                    d="M26.8146 20.9991L28.5313 20.528C29.0979 20.3728 29.7071 20.4105 30.2454 20.634C30.7838 20.8575 31.2143 21.2516 31.4569 21.7428L32.6604 24.1788C32.8693 24.6014 32.9275 25.0729 32.8269 25.5271C32.7263 25.9814 32.4719 26.3956 32.0994 26.7115L30.2675 28.265C30.022 28.4772 30.2081 29.3039 31.105 30.7187C32.0028 32.1343 32.6968 32.6941 33.0167 32.607L35.4167 31.9391C35.9032 31.8037 36.4241 31.8102 36.9063 31.9578C37.3885 32.1053 37.8079 32.3865 38.1057 32.7619L39.8162 34.9195C40.1616 35.3552 40.3216 35.8903 40.2664 36.4252C40.2111 36.9602 39.9444 37.4587 39.5157 37.8282L38.1934 38.9679C37.7665 39.3358 37.2401 39.5941 36.6677 39.7164C36.0954 39.8387 35.4976 39.8206 34.9355 39.664C32.165 38.8921 29.5993 36.6013 27.2037 32.824C24.8028 29.041 23.8961 25.85 24.528 23.2431C24.6555 22.7178 24.9346 22.2329 25.3365 21.8385C25.7384 21.444 26.2487 21.1543 26.8146 20.9991Z"
+                                    fill="#705AEB" />
+                                <defs>
+                                    <filter id="filter0_dd_118_42" x="0.749756" y="0.615021" width="62.75"
+                                        height="58.548" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="4" dy="4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.815686 0 0 0 0 0.823529 0 0 0 0 0.835294 0 0 0 0.75 0" />
+                                        <feBlend mode="multiply" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_118_42" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="-4" dy="-4" />
+                                        <feGaussianBlur stdDeviation="2" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.5 0" />
+                                        <feBlend mode="multiply" in2="effect1_dropShadow_118_42"
+                                            result="effect2_dropShadow_118_42" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_118_42"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="content">
+                    <h1>find your doctor</h1>
+                    <div class="search">
+                        <picture>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51"
+                                fill="none">
+                                <path
+                                    d="M19.9893 1.31677e-06C16.8607 0.00167353 13.7762 0.737289 10.9836 2.14772C8.19094 3.55816 5.76816 5.60407 3.90994 8.12102C2.05173 10.638 0.809903 13.5558 0.284283 16.6399C-0.241338 19.724 -0.036095 22.8884 0.883517 25.8788C1.80313 28.8692 3.41146 31.6021 5.57924 33.8579C7.74702 36.1137 10.4138 37.8295 13.3652 38.8674C16.3166 39.9053 19.4703 40.2363 22.5729 39.8338C25.6755 39.4313 28.6404 38.3066 31.2293 36.55L43.5893 48.9C43.9326 49.2684 44.3466 49.5639 44.8066 49.7689C45.2666 49.9739 45.7632 50.0841 46.2667 50.093C46.7702 50.1018 47.2704 50.0092 47.7373 49.8206C48.2042 49.632 48.6284 49.3513 48.9845 48.9952C49.3406 48.6391 49.6213 48.2149 49.8099 47.748C49.9985 47.281 50.0912 46.7809 50.0823 46.2774C50.0734 45.7739 49.9632 45.2773 49.7582 44.8173C49.5533 44.3573 49.2577 43.9433 48.8893 43.6L36.5393 31.24C38.5825 28.2329 39.7674 24.7258 39.9665 21.0957C40.1657 17.4656 39.3716 13.8499 37.6697 10.6373C35.9678 7.42473 33.4224 4.73682 30.3072 2.86258C27.192 0.988347 23.6249 -0.00131771 19.9893 1.31677e-06ZM7.48931 20C7.48931 16.6848 8.80627 13.5054 11.1505 11.1612C13.4947 8.81696 16.6741 7.5 19.9893 7.5C23.3045 7.5 26.4839 8.81696 28.8281 11.1612C31.1724 13.5054 32.4893 16.6848 32.4893 20C32.4893 23.3152 31.1724 26.4946 28.8281 28.8388C26.4839 31.183 23.3045 32.5 19.9893 32.5C16.6741 32.5 13.4947 31.183 11.1505 28.8388C8.80627 26.4946 7.48931 23.3152 7.48931 20Z"
+                                    fill="#705AEB" />
+                            </svg>
+                        </picture>
+                        <label for="search">search</label>
+                        <input type="search" placeholder="Search With Doctor Name">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- <a href="../ALL-DOCTORS/index.html"></a> -->
+ <!-- <a href="../DOCTOR-PROFILE/index.html"></a> -->
+    </main>
+    <!-- end main  -->
+    <script>
+        function gotopage() {
+            window.location.href = "../CHAT/index.html"
+        }
+        function mydoc() { 
+            window.location.href = "../MY-DOCTORS/index.html"
+        }
+        function docprofile() { 
+            window.location.href='../DOCTOR-PROFILE/index.html'
+        }
+    </script>
+</body>
