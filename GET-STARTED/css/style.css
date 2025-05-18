@@ -1,0 +1,106 @@
+/* start global */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background: #705AEB;
+    --button: #FFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* end global */
+/* start page */
+main {
+    background-color: var(--background);
+
+}
+
+main .container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* left-side */
+main .container .left-side {
+    text-align: center;
+    flex-basis: 50%;
+    position: relative;
+}
+
+main .container .left-side .img {
+    width: 35rem;
+    margin: 0 auto;
+}
+
+main .container .left-side .img img {
+    width: 100%;
+}
+
+main .container .left-side button {
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    width: 15rem;
+    height: 4rem;
+    background: var(--button);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: .3s;
+    border: 0;
+
+}
+
+main .container .left-side button:hover {
+    background-color: #705AEB;
+}
+main .container .left-side button:hover a { 
+    color: #fff;
+}
+
+
+main .container .left-side button a {
+    color: #705AEB;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    text-decoration: none;
+    transition: .3s;
+
+}
+
+/* right side */
+main .container .right-side {
+    width: 50%;
+    position: relative;
+}
+
+main .container .right-side::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+main .container .right-side img {
+    width: 100%;
+    height: 730px;
+}
+
+/* end page */
